@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- A fragment of a book store inventory database -->
+<bookstore xmlns:bk="urn:samples">
+  <book genre="novel" publicationdate="1997" bk:role="maid">
+    <title>Pride And Prejudice</title>
+    <first-name>Jane</first-name>
+    <price>24.95</price>
+  </book>
+  <book bk:role="handmaid">
+    <title>The Handmaid's Tale</title>
+    <first-name>Margaret</first-name>
+    <price>29.95</price>
+  </book>
+  <book bk:role="admin">
+    <title>Emma</title>
+    <first-name>George</first-name>
+    <price>19.95</price>
+  </book>
+  <book bk:role="Sensibility">
+    <title>Sense and Sensibility</title>
+    <first-name>Jane</first-name>
+    <price>19.95</price>
+  </book>
+</bookstore>

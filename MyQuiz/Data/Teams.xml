@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KS Xname="purple">
+  <Team>
+    <TeamName>Dodgers</TeamName>
+    <TeamColor>blue</TeamColor>
+    <LastAccessed>5/9/2013 4:44:44 PM</LastAccessed>
+  </Team>
+  <Team>
+    <TeamName>Rangers</TeamName>
+    <TeamColor>red</TeamColor>
+    <LastAccessed>5/9/2013 1:11:11 PM</LastAccessed>
+  </Team>
+  <Team>
+    <TeamName>Knights</TeamName>
+    <TeamColor>silver</TeamColor>
+    <LastAccessed>5/9/2013 3:33:33 PM</LastAccessed>
+  </Team>
+  <Team>
+    <TeamName>Eagles</TeamName>
+    <TeamColor>green</TeamColor>
+    <LastAccessed>5/9/2013 2:22:22 PM</LastAccessed>
+  </Team>
+  <Team>
+    <TeamName>Cardinals</TeamName>
+    <TeamColor>Red</TeamColor>
+    <LastAccessed>2/4/2015 2:37:49 PM</LastAccessed>
+  </Team>
+</KS>

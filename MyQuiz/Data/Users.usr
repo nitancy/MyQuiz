@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users xmlns:bk="urn:samples">
+  <User role="Admin">
+    <Name>John</Name>
+    <Password>Secret</Password>
+  </User>
+  <User>
+    <Name>Malaki</Name>
+    <Password>Hidden</Password>
+  </User>
+</Users>

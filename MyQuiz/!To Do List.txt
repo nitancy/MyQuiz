@@ -1,0 +1,33 @@
+﻿Taking Test Mode
+
+* Require user to enter username
+* Require user to enter password
+* Toggle hidden chars on password
+Save username and password in XML format with unique extension to hide from tests.
+
+* Screen to Display all tests to choose from (each is an XML file)
+
+Screen to Display the Q & A
+	Screen to Allow user to select number of question to take with a default of all
+	Read XML file
+	Count Questions in XML file
+	Randomize the order of the questions (and answers)
+	Insert Q and A into form controls
+	Track which is the correct answer
+	On-click for next  button will increment the correct answer count and call function to display new Q & A
+
+Screen to create new test or modify existing test
+	Allow editing of text of Q & A and changing which is Correct Answer 
+	Allow renumbering sequence of Qs
+	Allow appending or inserting new Q & A
+
+Display showing total correct, incorrect 
+	track history and high score of user
+
+Display review of incorrect answers with correct answer incicated
+
+* How to select a node by element name?
+* How to select a node by attribute?
+How to sort nodes by element?
+* How to sort nodes by attribute?
+* Append Node and write XML document (in memory) to file?

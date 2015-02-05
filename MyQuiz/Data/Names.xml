@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Names>
+  <Name type="M">
+    <FirstName>John</FirstName>
+    <LastName>Miller</LastName>
+  </Name>
+  <Name type="F">
+    <FirstName>Sue</FirstName>
+    <LastName>Miller</LastName>
+  </Name>
+  <Name type="M">
+    <FirstName>James</FirstName>
+    <LastName>Miller</LastName>
+  </Name>
+  <Name type="?">
+    <FirstName>Tobor</FirstName>
+    <LastName>the Robot</LastName>
+  </Name>
+</Names>
