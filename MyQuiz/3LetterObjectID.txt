@@ -1,0 +1,40 @@
+﻿from: http://gcctech.org/csc/VB/VB_3letterObjectID.htm 
+
+Objects	
+Object					ID
+Check Box				chk
+Combo Box				cbo
+Command Button			cmd
+Data					dat
+Directory List Box		dir
+Drive List Box			drv
+File List Box			fil
+Form					frm
+Frame					fra
+Horizontal Scroll Bar	hsb
+Image					img
+Label					lbl
+Line					lin
+List Box				lst
+OLE						ole
+Option Button			opt
+Picture Box				pic
+Shape					shp
+Text Box				txt
+Timer					tmr
+Vertical Scroll Bar		vsb
+	
+Variables	
+	
+Type					ID
+Byte					byt
+Boolean					bln
+Currency				cur
+Date (Time)				dtm
+Double					dbl
+Integer					int
+Long Integer			lng
+Object					obj
+Single					sng
+String					str
+Variant					vnt

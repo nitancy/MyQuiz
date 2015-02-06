@@ -1,20 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.IO;
 using System.Xml;
-using System.Xml.Linq;
-using System.Security.Cryptography;
 
 using EncryptString;
-using XmlUtils;
 
 namespace MyQuiz
 {
@@ -79,6 +68,11 @@ namespace MyQuiz
                 //string result = XmlUtils.XmlSearch.searchXMLFileOriginal("..\\..\\Data\\", "Users.usr", "John");
                 string result = XmlUtils.XmlSearch.searchXMLFileOriginal("..\\..\\Data\\", "booksort.xml", "admin");
                 Console.WriteLine("returned value: " + result);
+
+                this.Hide();
+                var selectTest = new SelectTest();
+                selectTest.Closed += (s, args) => this.Close();
+                selectTest.Show();
             }
 
         }
