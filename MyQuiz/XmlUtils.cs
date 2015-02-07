@@ -47,7 +47,7 @@ namespace XmlUtils
             XmlElement root = doc.DocumentElement;
             book = root.SelectSingleNode("descendant::book[@bk:role='admin']", nsmgr);
             string personName = book.FirstChild.InnerText;
-            Console.WriteLine("First child: " + book.FirstChild.InnerText);
+            //Console.WriteLine("First child: " + book.FirstChild.InnerText);
 
             return personName;
         }

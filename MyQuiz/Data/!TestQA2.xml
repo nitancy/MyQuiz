@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Quiz>
+  <ModDate>Apr-4-1953</ModDate>
+  <QA>
+    <Question Nmbr="1">If your car and a car coming from your right reach an intersection at the same time, who has the right of way?</Question>
+    <Answer1>A. Your car</Answer1>
+    <Answer2 Correct="T">B. The other car</Answer2>
+    <Answer3>C. You both wait for the first car that makes a move</Answer3>
+    <Answer4>D. Neither, as both cars must come to a stop</Answer4>
+    <Correct>B</Correct>
+  </QA>
+  <QA>
+    <Question Nmbr="2">How many feet before you make a turn should you signal that you are going to turn?</Question>
+    <Answer1>A. 50 feet</Answer1>
+    <Answer2 Correct="T">B. 100 feet</Answer2>
+    <Answer3>C. 150 feet</Answer3>
+    <Answer4>D. While turning</Answer4>
+    <Correct>B</Correct>
+  </QA>
+  <QA>
+    <Question Nmbr="3">You are driving in an alley at fifteen (15) miles per hour. You are: </Question>
+    <Answer1>A. Breaking the speed limit for alleys</Answer1>
+    <Answer2>B. Driving too slow</Answer2>
+    <Answer3 Correct="T">C. Obeying the law</Answer3>
+    <Answer4>D. Breaking the law as you should never drive in an alley</Answer4>
+    <Correct>C</Correct>
+  </QA>
+  <QA>
+    <Question Nmbr="4" >A car driving toward you at night and it has its blinding high beam lights on. The driver of this car is</Question>
+    <Answer1 Correct="T">A. Guilty only of bad manners because the high beams blind other drivers</Answer1>
+    <Answer2>B. A safe driver because the high beams light up the road more brightly than the lower beams</Answer2>
+    <Answer3>C. Not obeying the law because the low beams must be used at all times</Answer3>
+    <Answer4>D. Not doing anything wrong (it doesn't matter)</Answer4>
+    <Correct>A</Correct>
+  </QA>
+  <QA>
+    <Question Nmbr="5">You are driving up to an intersection where there is no signal light or policeman. A man is crossing in the cross walk in front of your car. You should:</Question>
+    <Answer1>A. Continue into the intersection because you have the right-of-way</Answer1>
+    <Answer2>B. Slow down and be careful</Answer2>
+    <Answer3 Correct="T">C. Stop and give him the right-of-way</Answer3>
+    <Answer4>D. Not care</Answer4>
+    <Correct>C</Correct>
+  </QA>
+  <QA>
+    <Question Nmbr="6">You wish to make a "U" turn at an intersection controlled by a traffic light. You should: </Question>
+    <Answer1 Correct="T">A. Drive to another intersection that has no traffic light or sign saying NO \"U\" Turn"</Answer1>
+    <Answer2>B. Wait until the light turns green before making the "U" turn</Answer2>
+    <Answer3>C. Make the "U" turn if there is a policeman at the intersection</Answer3>
+    <Answer4>D. Wait for the red light before making the "U" turn to make sure that the opposing traffic is safe</Answer4>
+    <Correct>A</Correct>
+  </QA>
+</Quiz>

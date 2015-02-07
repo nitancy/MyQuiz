@@ -14,8 +14,9 @@ namespace MyQuiz
             InitializeComponent();
         }
 
-        private void SetUp_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("SetUp loaded!", "yes");
         }
 
 
@@ -58,16 +59,16 @@ namespace MyQuiz
 
                 // Encrypt the password
                 string encryptedstring = StringCipher.Encrypt(plaintext, password);
-                Console.WriteLine(encryptedstring);
+                //Console.WriteLine(encryptedstring);
 
                 // Decrypt the password
                 string decryptedstring = StringCipher.Decrypt(encryptedstring, password);
-                Console.WriteLine(decryptedstring);
+                //Console.WriteLine(decryptedstring);
 
                 // Find userNamer in file
                 //string result = XmlUtils.XmlSearch.searchXMLFileOriginal("..\\..\\Data\\", "Users.usr", "John");
                 string result = XmlUtils.XmlSearch.searchXMLFileOriginal("..\\..\\Data\\", "booksort.xml", "admin");
-                Console.WriteLine("returned value: " + result);
+               // Console.WriteLine("returned value: " + result);
 
                 this.Hide();
                 var selectTest = new SelectTest();

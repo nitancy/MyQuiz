@@ -49,14 +49,14 @@ namespace MyQuiz
     }
 }
 
-class QandAs
-{
-    string _QuestionID;
-    string _Answer1;
-    string _Answer2;
-    string _Answer3;
-    string _Answer4;
-    string _Correct;
+//class QandAs
+//{
+//    string _QuestionID;
+//    string _Answer1;
+//    string _Answer2;
+//    string _Answer3;
+//    string _Answer4;
+//    string _Correct;
 
     // Constructor
     //public QandAs(string QuestionID, string Answer1,string Answer2,string Answer3, string Answer4, string Correct)
@@ -68,7 +68,7 @@ class QandAs
     //    this._Answer4 = _Answer4;
     //    this._Correct = _Correct;
     //}
-}
+//}
 
 //                //public int QuestionID { get; set; }
 //                //public string Question { get; set; }
@@ -229,3 +229,17 @@ XDocument output = new XDocument(
 //Console.WriteLine("");
 
 //Console.ReadLine();
+
+// Use this event handler for the FormClosing event.
+//private void MyForm_FormClosing(object sender, FormClosingEventArgs e)
+//{
+//   this.Hide();
+//   e.Cancel = true; // this cancels the close event.
+//}
+// or this one which forces the form to be hidden
+//private void MyForm_FormClosing(object sender, FormClosingEventArgs e)
+//{
+//    if (e.CloseReason != CloseReason.UserClosing) return;
+//    e.Cancel = true;
+//    Hide();
+//}

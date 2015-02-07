@@ -30,6 +30,8 @@ namespace MyQuiz
             LoadTests();
         }
 
+
+
         
         private void LoadTests()
         {
@@ -41,36 +43,77 @@ namespace MyQuiz
             foreach (string test in listOfFiles)
             {
                 fileName = Path.GetFileNameWithoutExtension(test);  // remove the path and the extension
-                cboTests.Items.Add(fileName);
+                lstTests.Items.Add(fileName);
             }
-            cboTests.SelectedIndex = 0;     // Select the first item
+            lstTests.SelectedIndex = 0;     // Select the first item
 
             // count the number of questions
-            string strQCount = GetTheQuestionCount(cboTests.SelectedItem.ToString(), 0);
+            Console.WriteLine("lstTests.SelectedItem: " +lstTests.SelectedItem.ToString());
+            Console.WriteLine("lstTests.Text: " + lstTests.Text);
+            string strQCount = GetTheQuestionCount(lstTests.Text);
             lblCount.Text = strQCount;
         }
-
-        private string GetTheQuestionCount(string filename, int indexNo)
+        /// <summary>
+        /// GetTheQuestionCount - counts each question in each test.
+        /// </summary>
+        /// <param name="filename">The name of the file</param>
+        /// <returns>the count as a string</returns>
+        private string GetTheQuestionCount(string filename)
         {
             string path = @"..\..\Data\";
 
             // Get count of Questions
             var nodeCount = 0;
-
+            Console.WriteLine(path + filename + ".xml");
             using (var reader = XmlReader.Create(path + filename + ".xml"))
             {
                 while (reader.Read())
                 {
-                    if (reader.NodeType == XmlNodeType.Element &&
-                        reader.Name == "Question")
+                    if (reader.NodeType == XmlNodeType.Element && reader.Name == "Question")
                     {
                         nodeCount++;
                     }
                 }
             }
-            Console.WriteLine(nodeCount);
+            Console.WriteLine("NodeCount: " + nodeCount);
             // return the count as a string
             return nodeCount.ToString();
         }
+
+        private void lstTests_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Get the count and stuff it in the text box.
+            lblCount.Text = GetTheQuestionCount(lstTests.Text);
+
+            Console.WriteLine("lstTests.Text: " + lstTests.Text);
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            // This is how you call a non-static method, you instantiate the class
+            // first into a local variable.  This is the traditional way of doing things
+            Linq2Xml GetXMLQA = new Linq2Xml();
+            GetXMLQA.GetQA();
+
+            
+            //numberOfQuestions = int.Parse(updTotalQuestions.Value.ToString());
+            // Open new window frmAnser pass in numberOfQuestions
+
+            this.Hide();
+            var frmAnswer = new SelectTest();
+            frmAnswer.Closed += (s, args) => this.Close();
+            frmAnswer.Show();
+        }
+
+        
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Goodby");
+            Application.Exit();
+        }
+
+        
+
     }
 }

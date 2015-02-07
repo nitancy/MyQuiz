@@ -28,75 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblData = new System.Windows.Forms.Label();
+            this.txtDataToPass = new System.Windows.Forms.TextBox();
+            this.btnPassData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // lblData
             // 
-            this.button1.Location = new System.Drawing.Point(22, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "1 Way";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lblData.AutoSize = true;
+            this.lblData.Location = new System.Drawing.Point(12, 37);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(102, 17);
+            this.lblData.TabIndex = 0;
+            this.lblData.Text = "Data To Pass: ";
             // 
-            // label1
+            // txtDataToPass
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Display string & reversed string";
+            this.txtDataToPass.Location = new System.Drawing.Point(120, 38);
+            this.txtDataToPass.Name = "txtDataToPass";
+            this.txtDataToPass.Size = new System.Drawing.Size(128, 22);
+            this.txtDataToPass.TabIndex = 1;
             // 
-            // button2
+            // btnPassData
             // 
-            this.button2.Location = new System.Drawing.Point(153, 273);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Another Way";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MyQuiz.Properties.Resources.John_Miller;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 172);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(233, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(22, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "*";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnPassData.Location = new System.Drawing.Point(254, 37);
+            this.btnPassData.Name = "btnPassData";
+            this.btnPassData.Size = new System.Drawing.Size(120, 23);
+            this.btnPassData.TabIndex = 2;
+            this.btnPassData.Text = "Send to Form2";
+            this.btnPassData.UseVisualStyleBackColor = true;
+            this.btnPassData.Click += new System.EventHandler(this.btnPassData_Click);
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnPassData;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 303);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(399, 106);
+            this.Controls.Add(this.btnPassData);
+            this.Controls.Add(this.txtDataToPass);
+            this.Controls.Add(this.lblData);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,10 +78,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.TextBox txtDataToPass;
+        private System.Windows.Forms.Button btnPassData;
     }
 }
